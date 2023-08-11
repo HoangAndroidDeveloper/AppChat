@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:text="Trịnh Việt Hoàng"
+        android:id="@+id/name_notification"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_notification"
+        android:text="Hello"
+        android:id="@+id/MessNotification"
+        android:textSize="8pt"
+        tools:ignore="HardcodedText"
+        />
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        android:layout_alignParentEnd="true"
+        android:layout_width="20pt"
+        android:id="@+id/image_notification"
+        android:layout_height="20pt"
+        tools:ignore="ContentDescription"
+        />
+    <LinearLayout
+        android:layout_marginTop="10pt"
+        android:padding="10pt"
+        android:background="#D6D3D3"
+        android:layout_below="@+id/image_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textSize="10pt"
+            android:text="Trả lời"
+            android:textStyle="bold"
+            android:textColor="#45A3ED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#45A3ED"
+            android:layout_marginStart="15pt"
+            android:textSize="10pt"
+            android:text="Xóa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</RelativeLayout>

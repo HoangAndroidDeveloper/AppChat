@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10pt"
+    android:paddingStart="25pt"
+    android:paddingEnd="25pt"
+    android:gravity="center_horizontal"
+    android:background="#CC111111"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <com.zyao89.view.zloading.ZLoadingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:z_type="StarBuilder"
+        app:z_duration_percent="0.5"
+        app:z_color="#FFEB3B"
+        />
+    <TextView
+        android:textSize="16dp"
+        android:textColor="#FF888888"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        tools:ignore="HardcodedText" />
+</LinearLayout>

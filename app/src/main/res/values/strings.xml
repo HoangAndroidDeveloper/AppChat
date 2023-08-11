@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AppChat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    // link emoji
+    <string-array name="LEmoji">
+        <item>https://em-content.zobj.net/source/noto-emoji-animations/344/smiling-face-with-smiling-eyes_1f60a.gif</item>
+        <item>https://em-content.zobj.net/source/noto-emoji-animations/344/loudly-crying-face_1f62d.gif</item>
+        <item>https://em-content.zobj.net/source/noto-emoji-animations/344/winking-face-with-tongue_1f61c.gif</item>
+        <item>https://em-content.zobj.net/source/noto-emoji-animations/344/money-mouth-face_1f911.gif</item>
+        <item>https://em-content.zobj.net/source/noto-emoji-animations/344/pouting-face_1f621.gif</item>
+    </string-array>
+</resources>

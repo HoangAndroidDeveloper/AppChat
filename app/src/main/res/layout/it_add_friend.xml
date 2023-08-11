@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:elevation="8dp"
+    android:background="@drawable/shadow"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="11pt"
+    android:paddingStart="10pt"
+    android:paddingEnd="10pt"
+    android:layout_height="wrap_content"
+    android:paddingBottom="3pt"
+    android:paddingTop="3pt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_avt"
+        android:layout_width="36pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="36pt"
+        app:cardCornerRadius="18pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/avt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_girl_1" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_marginTop="5pt"
+        app:layout_constraintStart_toEndOf="@+id/card_avt"
+        android:text="Thùy Linh"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/name"
+        android:layout_marginStart="8pt"
+        android:textColor="@color/black"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/bt_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chấp nhận"
+        android:layout_marginTop="8pt"
+        android:layout_marginStart="8pt"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/blue"
+        android:textSize="6pt"
+        app:layout_constraintStart_toEndOf="@+id/card_avt"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        />
+
+    <Button
+        android:id="@+id/bt_Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8pt"
+        android:layout_marginTop="8pt"
+        android:text="Xóa"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/view_color"
+        android:textAllCaps="false"
+        android:textSize="6pt"
+        app:layout_constraintStart_toEndOf="@+id/bt_accept"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

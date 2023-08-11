@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.IpCode"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:gravity="center_vertical"
+        android:layout_marginStart="20pt"
+        >
+    <ImageView
+
+        android:background="@color/white"
+        android:id="@+id/back_ipCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        />
+        <TextView
+            android:textSize="14pt"
+            android:text="Quên mật khẩu"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25pt"
+        android:text="Nhập mã xác nhận"
+        android:textColor="@color/blue"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        />
+
+    <TextView
+        android:id="@+id/txt_MailCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="9pt"
+        android:gravity="center"
+        android:layout_marginEnd="20pt"
+        android:layout_marginTop="15pt"
+        android:layout_marginStart="20pt"
+        android:text="Mã xác nhận đã được gửi về email"
+        tools:ignore="HardcodedText"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:id="@+id/email"
+        android:textColor="@color/blue"
+        android:gravity="center"
+        android:layout_marginStart="20pt"
+        android:layout_marginEnd="20pt"
+        android:text="trinhviethoang307@gmail.com"
+        tools:ignore="HardcodedText"
+        />
+    <com.chaos.view.PinView
+        app:cursorColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:itemSpacing="2pt"
+        app:itemCount="6"
+        android:id="@+id/pinView"
+        android:inputType="phone"
+        app:viewType="line"
+        android:layout_marginTop="30pt"
+        android:layout_gravity="center"
+        style="@style/PinWidget.PinView"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15pt"
+        android:textSize="10pt"
+        android:textColor="@color/default_color"
+        android:id="@+id/send_to"
+        android:text="Gửi lại mã sau: 60s"
+        android:layout_gravity="center"
+        tools:ignore="HardcodedText"
+        />
+
+    <Button
+        android:id="@+id/bt_XacNhan"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20pt"
+        android:layout_marginTop="15pt"
+        android:layout_marginEnd="20pt"
+        android:paddingTop="8pt"
+        android:enabled="false"
+        android:paddingBottom="8pt"
+        android:text="Tiếp tục"
+        android:textSize="8pt"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

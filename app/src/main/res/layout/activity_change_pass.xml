@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.ChangePass"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10pt"
+        >
+        <ImageView
+            android:background="@color/white"
+            android:id="@+id/back_ipCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            />
+        <TextView
+            android:textSize="14pt"
+            android:text="Quên mật khẩu"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_marginStart="10pt"
+        android:layout_marginEnd="10pt"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30pt"
+        android:textStyle="bold"
+        android:text="Mật khẩu đã được gửi về email của bạn"
+        android:textSize="12pt"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đổi mật khẩu dễ nhớ hơn"
+        android:textSize="10pt"
+        android:layout_marginTop="3pt"
+        android:gravity="center"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu cũ"
+        app:boxStrokeColor="@color/blue"
+        android:layout_marginStart="20pt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="20pt"
+        android:layout_marginTop="30pt"
+        app:endIconDrawable="@drawable/baseline_email_24"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            tools:ignore="DuplicateIds"
+            android:id="@+id/pass"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mật khẩu mới"
+        app:boxStrokeColor="@color/blue"
+        android:layout_marginStart="20pt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="20pt"
+        android:layout_marginTop="8pt"
+        app:endIconDrawable="@drawable/baseline_email_24"
+        tools:ignore="HardcodedText"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:id="@+id/passConfirm"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/bt_changePass"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20pt"
+        android:layout_marginTop="25pt"
+        android:layout_marginEnd="20pt"
+        android:paddingTop="8pt"
+        android:enabled="false"
+        android:paddingBottom="8pt"
+        android:text="Đổi mật khẩu"
+        android:textSize="8pt"
+        tools:ignore="HardcodedText"
+        />
+</LinearLayout>

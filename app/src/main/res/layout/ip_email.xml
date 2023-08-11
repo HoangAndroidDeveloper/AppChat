@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.IpEmailForgot">
+
+<ImageView
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@color/white"
+    android:id="@+id/back_ipMail"
+    android:layout_marginTop="10pt"
+    android:layout_marginStart="20pt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/baseline_arrow_back_24"
+    />
+    <TextView
+        android:layout_marginTop="25pt"
+        android:layout_marginStart="20pt"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14pt"
+        android:layout_height="wrap_content"
+        android:text="Nhập email của bạn"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="9pt"
+        android:layout_marginEnd="30pt"
+        android:layout_marginTop="5pt"
+        android:layout_marginStart="20pt"
+        android:text="Nhập địa chỉ email mà bạn dùng để đăng ký tài khoản"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        app:boxStrokeColor="@color/blue"
+        android:layout_marginStart="20pt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="20pt"
+        android:layout_marginTop="30pt"
+        app:endIconDrawable="@drawable/baseline_email_24"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:id="@+id/email_forgot"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20pt"
+        android:layout_marginEnd="20pt"
+        android:layout_marginTop="15pt"
+        android:clickable="true"
+        android:id="@+id/bt_sendCode"
+        android:foreground="?attr/selectableItemBackground"
+        style="@style/Theme.AppChat"
+        android:paddingTop="4pt"
+        android:textSize="8pt"
+         android:background="@color/blue"
+        android:paddingBottom="4pt"
+        app:backgroundTint = "@null"
+        android:text="Gửi mã"
+        />
+</LinearLayout>

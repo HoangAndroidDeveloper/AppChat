@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ChatFragment">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10pt"
+            android:text="Messages"
+            android:textColor="@color/black"
+            android:textSize="16pt"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+             android:layout_height="1dp"
+            />
+        <ImageButton
+            android:id="@+id/ic_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10pt"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+    <SearchView
+        android:background="@drawable/custom_search"
+        android:elevation="3dp"
+        android:focusable="true"
+        android:layout_marginTop="10pt"
+        android:id="@+id/bt_search"
+        android:iconifiedByDefault="false"
+        android:layout_marginStart="10pt"
+        android:layout_marginEnd="10pt"
+        android:queryHint="Tìm kiếm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rUserChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10pt"
+        android:layout_marginTop="5pt"
+        android:layout_marginEnd="10pt"
+        tools:ignore="UnknownId"
+        />
+
+</LinearLayout>

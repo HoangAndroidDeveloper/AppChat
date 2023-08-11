@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FriendFragment"
+    tools:ignore="ResAuto">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:gravity="center_vertical"
+        >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10pt"
+        android:text="Bạn bè"
+        android:textColor="@color/black"
+        android:textSize="16pt"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/ic_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10pt"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_search"
+        />
+    </LinearLayout>
+    <SearchView
+        android:background="@drawable/custom_search"
+        android:elevation="3dp"
+        android:focusable="true"
+        android:layout_marginTop="10pt"
+        android:id="@+id/bt_search"
+        android:iconifiedByDefault="false"
+        android:layout_marginStart="10pt"
+        android:layout_marginEnd="10pt"
+        android:queryHint="Tìm kiếm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/menu_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10pt"
+        android:layout_marginTop="15pt"
+        android:layout_marginEnd="10pt"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/blue"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10pt"
+        android:layout_width="match_parent"
+        android:id="@+id/rFriend"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
